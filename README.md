@@ -37,7 +37,7 @@ This project analyzes employee attrition and performance using HR data to identi
 1. Download the `.pbix` file
 2. Open using Power BI Desktop
 3. Interact with filters to explore insights
-<img width="1423" height="784" alt="Screenshot 2026-01-25 135732" src="https://github.com/user-attachments/assets/c2f1b914-587e-444a-b86a-1c30c8c3d3ae" />
+<img width="1432" height="803" alt="Screenshot 2026-02-18 105251" src="https://github.com/user-attachments/assets/a8316c75-edd7-4bbc-b011-cd52ca0a3cbd" />
 
 📊 This dashboard shows:
 
@@ -61,7 +61,7 @@ Employees with very high satisfaction show better retention
 **Key Insight Highlight**
 Sales Executives experience the highest attrition, especially among employees with low job satisfaction and long commute distance
 
-<img width="1397" height="787" alt="Image" src="https://github.com/user-attachments/assets/bfcac82f-121e-4bf0-ad10-631adc2e65ca" />
+<img width="1412" height="792" alt="Screenshot 2026-02-18 115030" src="https://github.com/user-attachments/assets/9840c7c0-befb-4cab-b7d2-49de4350c656" />
 
 📊 This dashboard shows:
 
@@ -97,10 +97,19 @@ High involvement significantly reduces attrition risk
 
 Job Role, Education Field, Gender, and Age filters enable deeper analysis and scenario exploration
 
-Dashboard **Summary**
+## Dashboard **Summary**
 
 These HR Analytics dashboards analyze employee attrition and performance from both an organizational overview and a detailed driver-level perspective. The dashboards track key workforce KPIs such as total employees, attrition count, attrition rate, and average income, while also examining how attrition varies by job role, education, performance rating, job satisfaction, work-life balance, job involvement, and commute distance. Interactive filters enable deeper exploration of specific employee segments, helping HR teams identify high-risk roles, understand the underlying causes of attrition, and support data-driven decisions aimed at improving employee retention and engagement.
+## Recommendation
+Improve Work–Life Balance: reduce overtime, add flexible/hybrid schedules, and monitor teams with poor WLB.
 
+Boost Job Satisfaction & Involvement: manager coaching, better recognition, clearer roles, and career growth plans.
+
+Target High-Attrition Job Roles first: run role-specific retention actions (onboarding, workload fixes, incentives).
+
+Reduce Commute Pain: hybrid options for long-distance employees, commute support, and internal transfers closer to home.
+
+Protect Key Talent with fair pay & progression: check pay gaps, adjust critical-role compensation, and fast-track top performers.
 
 
 
