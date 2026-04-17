@@ -1,115 +1,139 @@
-# HR-Analytics-Dashboard-Employee-Attrition-Performance-Power-BI-
-I designed this HR Analytics dashboard to analyze employee attrition and performance using a data-driven, business-focused approach
+# 👥 HR Analytics Dashboard — Power BI
+
+> An interactive multi-page Power BI dashboard analyzing **employee attrition and performance** across a 1,470-employee workforce, delivering data-driven insights to support HR leadership in workforce planning, retention strategy, and employee engagement.
+
+---
+---
+
 ## 📌 Project Overview
-This project analyzes employee attrition and performance using HR data to identify key drivers behind employee turnover and support data-driven HR decision-making.
 
-## 📊 Key Metrics
-- Total Employees: 1,470
-- Attrition Count: 237
-- Attrition Rate: 16.12%
-- Average Monthly Income:  6.5K
+This project analyzes HR data to uncover the key drivers of employee attrition, identify high-risk employee groups, and provide actionable recommendations to reduce turnover and improve workforce satisfaction.
 
-## 🔍 Key Insights
-- Sales Executives show the highest attrition levels.
-- Low job satisfaction and long commute distance are strongly associated with attrition.
-- Poor work-life balance significantly increases attrition.
-- Higher job involvement correlates with lower attrition.
+| Metric | Value |
+|---|---|
+| Total Employees | 1,470 |
+| Attrition Count | 237 |
+| Attrition Rate | 16.12% |
+| Avg Monthly Income | $6.50K |
+| Highest Attrition Role | Sales Executive (326) |
+| Dashboard Pages | 2 |
 
-## 📈 Dashboard Features
-- Attrition analysis by Job Role
-- Job Satisfaction and Work-Life Balance impact
-- Distance from Home vs Attrition
-- Performance Rating vs Attrition
-- Heatmap analysis for role-based risk patterns
-- Interactive filters (Job Role, Education, Gender, Age)
+---
 
-## 🛠 Tools & Technologies
-- Power BI
-- DAX
-- Data Modeling
-- HR Analytics
+## 📂 Repository Structure
 
-## 📁 Files Included
-- Power BI dashboard (.pbix)
-- Dataset (CSV) -  
+```
+hr-analytics-dashboard/
+│
+├── README.md
+├── dataset/
+│   └── HR_Analytics.csv              # Raw HR dataset
+├── powerbi/
+│   └── HR_Analytics_Dashboard.pbix   # Power BI report file
+└── screenshots/
+    ├── page1_overview.png             # HR Analytics Overview page
+    └── page2_satisfaction.png         # Performance Satisfaction Analysis page
+```
 
-## 📌 How to Use
-1. Download the `.pbix` file
-2. Open using Power BI Desktop
-3. Interact with filters to explore insights
-<img width="1432" height="803" alt="Screenshot 2026-02-18 105251" src="https://github.com/user-attachments/assets/a8316c75-edd7-4bbc-b011-cd52ca0a3cbd" />
+---
 
-📊 This dashboard shows:
+## 📊 Dashboard Pages
 
-- **Overall workforce health**
-Total employees: 1,470
- Attrition count: 237
- Attrition rate: 16.12%
-Average monthly income: 6.5K
-**Attrition by Job Role**
- Identifies roles with the highest employee turnover
-Highlights Sales Executives as the most affected role
-**Income vs Attrition by Education**
-Compares average monthly income across education levels
- Shows how income differences relate to attrition outcomes
-**Performance Rating vs Attrition**
-Indicates that employees with higher performance ratings have lower attrition
- Most attrition occurs outside top performance categories
-**Job Satisfaction vs Attrition**
- Demonstrates that low job satisfaction is strongly linked to higher attrition
-Employees with very high satisfaction show better retention
-**Key Insight Highlight**
-Sales Executives experience the highest attrition, especially among employees with low job satisfaction and long commute distance
+### Page 1 — HR Analytics Overview
 
-<img width="1412" height="792" alt="Screenshot 2026-02-18 115030" src="https://github.com/user-attachments/assets/9840c7c0-befb-4cab-b7d2-49de4350c656" />
+| Visual | Description |
+|---|---|
+| KPI Cards | Avg Monthly Income, Attrition Rate %, Total Employees, Attrition Count |
+| Attrition by JobRole | Bar chart ranking all job roles by attrition count |
+| Performance Rating VS Attrition | Grouped bar — Excellent vs Outstanding performance |
+| Avg Monthly Income by Education | Clustered bar by education level and attrition status |
+| Attrition by Marital Status | Pie chart — Divorced, Married, Single distribution |
+| Key Insights Panel | Auto-generated business observations for HR leadership |
 
-📊 This dashboard shows:
+<img width="1318" height="718" alt="Screenshot 2026-04-17 105449" src="https://github.com/user-attachments/assets/32a3e405-68da-4bfe-ab9e-9d9f3d55eec9" />
 
-**Employee attrition patterns across the organization**
 
-Comparison of employees who left (Attrition = Yes) vs stayed (Attrition = No)
+### Page 2 — Performance Satisfaction Analysis
 
-Impact of commute distance
+| Visual | Description |
+|---|---|
+| Distance From Home by JobRole | Clustered bar showing attrition by commute distance |
+| Attrition by Work Life Balance | Horizontal bar — Bad, Best, Better, Good ratings |
+| Job Satisfaction VS Attrition | Stacked bar by satisfaction level (Very High, High, Low, Medium) |
+| Job Involvement VS Attrition | Stacked bar by involvement level |
+| Insight Cards | Distance Attrition, Satisfaction Attrition, Involvement Attrition summaries |
 
-Attrition by Job Role and Distance from Home
+<img width="1330" height="739" alt="Screenshot 2026-04-17 105501" src="https://github.com/user-attachments/assets/60c21002-49a0-49a9-b182-cad74cb39c86" />
 
-Roles with longer average commute distances show higher attrition
 
-**Work–Life Balance vs Attrition**
+---
 
-Employees with poor or only good work-life balance have higher attrition
+## 🔍 Key Business Insights
 
-Better work-life balance is linked to stronger retention
+- **Sales Executives have the highest attrition (326 employees)** — targeted retention programs needed for this role
+- **Attrition is higher among employees with Excellent performance ratings** — high performers may be leaving due to low engagement or compensation gaps
+- **Employees living closer to the workplace show higher attrition** — commute distance alone is not a retention factor
+- **Attrition is highest among employees with High and Very High job satisfaction** — satisfaction ratings may not reflect true engagement
+- **Employees with High job involvement show the highest attrition count** — workload and burnout may be contributing factors
+- **Doctors have the highest average income but moderate attrition** — income alone does not guarantee retention
 
-**Job Satisfaction heatmap**
+---
 
-Visualizes attrition counts by Job Role × Satisfaction level
+## 🛠 Tools & Techniques
 
-Highlights roles and satisfaction levels with the highest attrition concentration
+| Tool | Purpose |
+|---|---|
+| Power BI Desktop | Dashboard design and report development |
+| DAX | Custom KPI measures, calculated columns, time intelligence |
+| Power Query (M Language) | Data cleaning and transformation |
+| Data Modeling | Star schema relationships across HR tables |
 
-**Job Involvement vs Attrition**
+### DAX Measures Used
+- `Attrition Rate % = DIVIDE([Attrition Count], [Total Employees], 0)`
+- `Avg Monthly Income = AVERAGE(HR_Analytics[MonthlyIncome])`
+- `Attrition Count = COUNTROWS(FILTER(HR_Analytics, HR_Analytics[Attrition] = "Yes"))`
+- `Total Employees = COUNTROWS(HR_Analytics)`
 
-Low job involvement strongly correlates with higher attrition
+---
 
-High involvement significantly reduces attrition risk
+## 🎛 Slicers and Filters
 
-**Interactive filtering**
+The dashboard includes 5 interactive slicers for self-service HR reporting:
 
-Job Role, Education Field, Gender, and Age filters enable deeper analysis and scenario exploration
+- **JobRole** — Filter by specific job roles
+- **EducationField** — Filter by field of education
+- **Attrition** — Toggle between Yes / No attrition status
+- **Gender** — Filter by Female / Male
+- **Age** — Filter by age group
 
-## Dashboard **Summary**
+---
 
-These HR Analytics dashboards analyze employee attrition and performance from both an organizational overview and a detailed driver-level perspective. The dashboards track key workforce KPIs such as total employees, attrition count, attrition rate, and average income, while also examining how attrition varies by job role, education, performance rating, job satisfaction, work-life balance, job involvement, and commute distance. Interactive filters enable deeper exploration of specific employee segments, helping HR teams identify high-risk roles, understand the underlying causes of attrition, and support data-driven decisions aimed at improving employee retention and engagement.
-## Recommendation
-Improve Work–Life Balance: reduce overtime, add flexible/hybrid schedules, and monitor teams with poor WLB.
+## 📁 Dataset
 
-Boost Job Satisfaction & Involvement: manager coaching, better recognition, clearer roles, and career growth plans.
+| Column | Description |
+|---|---|
+| Age | Employee age |
+| Attrition | Yes / No attrition status |
+| JobRole | Employee job title |
+| MonthlyIncome | Monthly salary in USD |
+| PerformanceRating | Excellent / Outstanding |
+| JobSatisfaction | 1 to 4 scale |
+| WorkLifeBalance | 1 to 4 scale |
+| JobInvolvement | 1 to 4 scale |
+| DistanceFromHome | Commute distance in km |
+| Education | Education level |
+| MaritalStatus | Divorced / Married / Single |
 
-Target High-Attrition Job Roles first: run role-specific retention actions (onboarding, workload fixes, incentives).
+> Source: IBM HR Analytics Employee Attrition Dataset (open dataset)
 
-Reduce Commute Pain: hybrid options for long-distance employees, commute support, and internal transfers closer to home.
+---
 
-Protect Key Talent with fair pay & progression: check pay gaps, adjust critical-role compensation, and fast-track top performers.
+
+
+---
+
+
+
 
 
 
